@@ -9,7 +9,7 @@ CREATE TABLE tblBooks(
     Title  VARCHAR (50)    NULL,
     Publisher VARCHAR (50) NULL,
 	YearPublished INT     NULL,
-    Genre   VARCHAR (10)  NULL,
+    Genre   VARCHAR (30)  NULL,
     Available      BIT             NULL
 );
 
