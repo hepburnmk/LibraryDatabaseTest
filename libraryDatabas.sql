@@ -6,7 +6,7 @@ GO
 CREATE TABLE tblBooks(
     ISBN   VARCHAR (13)    PRIMARY KEY NOT NULL,
     Author VARCHAR (50)     NULL,
-    Title  VARCHAR (50)    NULL,
+    Title  VARCHAR (255)    NULL,
     Publisher VARCHAR (50) NULL,
 	YearPublished INT     NULL,
     Genre   VARCHAR (30)  NULL,
@@ -58,3 +58,53 @@ VALUES
 '266', 'Stop feeling like a fraud and escape the mind-trap of imposter syndrome.'),
 ('9780263909029', 'His for a Price', 'Caitlin Crews', '2014', 'Romance Fiction', 'Harlequin', 'First', 'English', 'A',
 '187', 'Greek tycoon Nico Stathis has never been able to forget Mattie. And now, ten years of delicious tension later, he has her right where he wants her.
+('9780451522306', 'Animal Farm', 'George Orwell', '1986', 'Fiction', 'Signet Classics', 'Reprint', 'English', 'A', '112',
+'The book tells the story of a group of farm animals who rebel against their human farmer, hoping to create a society where the animals can be equal, free, and happy.'),
+
+('9780007424979', 'How Not to Be a Professional Footballer', 'Paul Merson', '2012', 'Sport', 'HarperSport', 'First', 'English', 'A', '336',
+'An anecdote-driven narrative of the classic footballer''s DOs and DO NOTS from the ever-popular Arsenal legend and football pundit Paul Merson aka ''The Merse'''),
+
+('9780140102901', 'Only a Game?', 'Eamon Dunphy', '1987', 'Sport', 'Penguin Books', 'First', 'English', 'A', '208',
+'The classic inside account of a season at a professional football club. Midfield player Eamon Dunphy charts the progress of Millwall during a season that begins with high hopes and ends with him on the transfer list.'),
+
+('9781911452133', 'Cybersecurity for Beginners', 'Raef Meeuwisse', '2017', 'Science', 'Cyber Simplicity', 'Second', 'English ', 'A', '224',
+'This book provides an easy insight into the essentials of cybersecurity,  even if you have a non-technical background. You may be a business person keen to understand this important subject area or an information security specialist looking to update your knowledge.'),
+
+('9780717181001', 'Gospel According To Blindboy', 'Blindboy Boatclub', '2016', 'Biography', 'Gill', 'Hardcover First', 'English', 'A', '304',
+'Ireland''s foremost satirist and now the talented author of a collection of brilliant short stories and visual art. Published to critical acclaim,  his first collection is powered by big themes and even bigger ideas.'),
+
+('9781786691873', 'Motherfocloir', 'Darach O''Seaghdha', '2018', 'Educational', 'Head of Zeus', 'First', 'English', 'A', '160', 'Motherfoclóir, takes an irreverent, pun-friendly and contemporary approach to the Irish language.'),
+
+('9780582101661', 'Reconstructing Quaternary Environments', 'J.J. Lowe & M.J.C. Walker', '1997', 'Educational', 'Routledge', 'Second', 'English',
+'A', '468', 'Examines the various forms of evidence used to establish the history and scale of environmenal changes during the Quaternary.'), 
+
+('9780273646129', 'Relationship Marketing: Exploring relational strategies in marketing', 'Mr. John Egan', '2001', 'Business',
+'Financial Timing', 'Fourth', 'English', 'A', '328', 'Based principally on the concepts and theories surrounding what is generally referred to as ''relationship marketing'', it comprehensively examines the major developments of what has been described as ''marketing''s new paradigm''.'),
+
+('9780679745358', 'Among the Thugs', 'Bill Buford', '1993', 'Crime', 'Vintage', 'First Vintage Departures ', 'English', 'A', '317',
+'They have names like Barmy Bernie,  Daft Donald, and Steamin'' Sammy. They like lager ((in huge quantities)),  the Queen, football clubs ((especially Manchester United)), and themselves. Their dislike encompasses the rest of the known universe.'),  
+
+('9781853267871', 'The Inferno', 'Dante', '1998', 'Educational', 'Wordsworth Editions', 'Reprint', 'English', 'A', '224',
+'In the Inferno,  Dante''s protagonist - and his reader - is presented with a graphic vision of the dreadful consequences of sin, and encounters an all-too-human array of noble, grotesque, beguiling,ridiculous and horrific characters.'),
+
+('9780174392125', 'Deutsch Heute', 'Sidwell', '1992', 'Educational ', 'Nelson Thornes Ltd', 'Second', 'English/German', 'A', '150', 'German Language  Grammar.'),
+
+('9780618127931', 'Economics, Fifth Edition, Hardcover', 'William Boyes', '2001', 'Business', 'Houghton Mifflin College Div', 'Fifth', 'English', 'A', '950', ' Arranged according to the proven Fundamental Questions learning system, each chapter highlights 5-10 fundamental precepts through questions.'),  
+
+('9780745644226', 'After the Car', 'John Urry & Kingsley L. Dennis', '2009', 'Sociology', 'Polity Press', 'First  ', 'English', 'A', '212',
+' They argue that the days of the car are numbered: powerful forces around the world are undermining the car system and will usher in a new transport system sometime in the next few decades.'),
+
+('9780393733686', 'The Urban Design Handbook', 'Urban Design Associates', '2013', 'Educational', 'W. W. Norton & Company', 'Second Edition',
+'English', 'A', '240', 'The go-to guide for the practice of sustainable urbanism.'),
+
+('9780393239355', 'The Second Machine Age: Work, Progress and Prosperity in a Time of Brilliant Technologies', 'Erik Brynjolfsson & Andrew McAfee', '2014',
+'I.T.', 'W. W. Norton & Company', 'First Hardcover', 'English', 'A', '560', 'Two thinkers at the forefront of their field reveal the forces driving the reinvention of our lives and our economy. As the full impact of digital technologies is felt, we will realize immense bounty in the form of dazzling personal technology, advanced infrastructure,and near-boundless access to the cultural items that enrich our lives.');
+
+
+
+
+SELECT
+*
+FROM
+tblBooks
+ORDER BY Language, Author;
