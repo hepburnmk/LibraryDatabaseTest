@@ -8,9 +8,14 @@ CREATE TABLE tblBooks(
     Author VARCHAR (50)     NULL,
     Title  VARCHAR (255)    NULL,
     Publisher VARCHAR (50) NULL,
-	YearPublished INT     NULL,
+YearPublished INT     NULL,
     Genre   VARCHAR (30)  NULL,
-    Available      BIT             NULL
+    Available      BIT             NULL,
+Edition VARCHAR(30) NULL,
+Language VARCHAR (30) NULL,
+Age CHAR(10) NULL,
+Pages INT NULL,
+Synopsis VARCHAR (MAX) NULL
 );
 
 SELECT @@VERSION
