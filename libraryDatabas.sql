@@ -4,7 +4,7 @@ USE LIBRARY
 GO
 
 CREATE TABLE tblBooks(
-    ISBN   VARCHAR (13)    PRIMARY KEY NOT NULL,
+    ISBN   VARCHAR (50)    PRIMARY KEY NOT NULL,
     Author VARCHAR (50)     NULL,
     Title  VARCHAR (255)    NULL,
     Publisher VARCHAR (50) NULL,
